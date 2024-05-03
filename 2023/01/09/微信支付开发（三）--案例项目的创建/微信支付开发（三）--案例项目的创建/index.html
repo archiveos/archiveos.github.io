@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>666 | cpu飙升的技术博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1 、创建SpringBoot项目1.1、新建项目注意：Java版本选择 8 1.2、添加依赖添加SpringBoot web依赖1.3、配置application.yml文件1234&lt;dependency&gt;&lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;&lt;artifactId&gt;spring-boot-start">
+<meta property="og:type" content="article">
+<meta property="og:title" content="666">
+<meta property="og:url" content="http://example.com/2023/01/09/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89--%E6%A1%88%E4%BE%8B%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89--%E6%A1%88%E4%BE%8B%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA/index.html">
+<meta property="og:site_name" content="cpu飙升的技术博客">
+<meta property="og:description" content="1 、创建SpringBoot项目1.1、新建项目注意：Java版本选择 8 1.2、添加依赖添加SpringBoot web依赖1.3、配置application.yml文件1234&lt;dependency&gt;&lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;&lt;artifactId&gt;spring-boot-start">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/01.png">
+<meta property="og:image" content="http://example.com/images/02.png">
+<meta property="og:image" content="http://example.com/images/03.png">
+<meta property="og:image" content="http://example.com/images/04.png">
+<meta property="og:image" content="http://example.com/images/05.png">
+<meta property="og:image" content="http://example.com/images/06.png">
+<meta property="og:image" content="http://example.com/images/07.png">
+<meta property="og:image" content="http://example.com/images/08.png">
+<meta property="og:image" content="http://example.com/images/09.png">
+<meta property="og:image" content="http://example.com/images/10.png">
+<meta property="og:image" content="http://example.com/images/11.png">
+<meta property="article:published_time" content="2023-01-08T19:57:32.000Z">
+<meta property="article:modified_time" content="2024-05-03T16:58:43.850Z">
+<meta property="article:author" content="cpu飙升">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/01.png">
+  
+    <link rel="alternate" href="/atom.xml" title="cpu飙升的技术博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cpu飙升的技术博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">archives@foxmail.com</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-微信支付开发（三）--案例项目的创建/微信支付开发（三）--案例项目的创建" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/01/09/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89--%E6%A1%88%E4%BE%8B%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89--%E6%A1%88%E4%BE%8B%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA/" class="article-date">
+  <time class="dt-published" datetime="2023-01-08T19:57:32.000Z" itemprop="datePublished">2023-01-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      666
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1-、创建SpringBoot项目"><a href="#1-、创建SpringBoot项目" class="headerlink" title="1 、创建SpringBoot项目"></a>1 、创建SpringBoot项目</h2><h2 id="1-1、新建项目"><a href="#1-1、新建项目" class="headerlink" title="1.1、新建项目"></a>1.1、新建项目</h2><h5 id="注意：Java版本选择-8"><a href="#注意：Java版本选择-8" class="headerlink" title="注意：Java版本选择 8"></a>注意：Java版本选择 8</h5><p><img src="/images/01.png"></p>
+<h2 id="1-2、添加依赖"><a href="#1-2、添加依赖" class="headerlink" title="1.2、添加依赖"></a>1.2、添加依赖</h2><h5 id="添加SpringBoot-web依赖"><a href="#添加SpringBoot-web依赖" class="headerlink" title="添加SpringBoot web依赖"></a>添加SpringBoot web依赖</h5><h2 id="1-3、配置application-yml文件"><a href="#1-3、配置application-yml文件" class="headerlink" title="1.3、配置application.yml文件"></a>1.3、配置application.yml文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">port: 8090 #服务端口</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">application:</span><br><span class="line">name: payment-demo # 应用名称</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-4、创建controller"><a href="#1-4、创建controller" class="headerlink" title="1.4、创建controller"></a>1.4、创建controller</h3><h5 id="创建controller包，创建ProductController类"><a href="#创建controller包，创建ProductController类" class="headerlink" title="创建controller包，创建ProductController类"></a>创建controller包，创建ProductController类</h5><h3 id="1-5、测试"><a href="#1-5、测试" class="headerlink" title="1.5、测试"></a>1.5、测试</h3><h5 id="访问：http-localhost-8090-api-product-test"><a href="#访问：http-localhost-8090-api-product-test" class="headerlink" title="访问：http://localhost:8090/api/product/test"></a>访问：<a target="_blank" rel="noopener" href="http://localhost:8090/api/product/test">http://localhost:8090/api/product/test</a></h5><h2 id="2-、引入Swagger"><a href="#2-、引入Swagger" class="headerlink" title="2 、引入Swagger"></a>2 、引入Swagger</h2><h5 id="作用：自动生成接口文档和测试页面。"><a href="#作用：自动生成接口文档和测试页面。" class="headerlink" title="作用：自动生成接口文档和测试页面。"></a>作用：自动生成接口文档和测试页面。</h5><h3 id="2-1、引入依赖"><a href="#2-1、引入依赖" class="headerlink" title="2.1、引入依赖"></a>2.1、引入依赖</h3><h3 id="2-2、Swagger配置文件"><a href="#2-2、Swagger配置文件" class="headerlink" title="2.2、Swagger配置文件"></a>2.2、Swagger配置文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">package com.xxx.paymentdemo.controller;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.RestController;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@RestController</span><br><span class="line">@RequestMapping(&quot;/api/product&quot;)</span><br><span class="line">@CrossOrigin //跨域</span><br><span class="line">public class ProductController &#123;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@GetMapping(&quot;/test&quot;)</span><br><span class="line">public String test()&#123;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">return &quot;hello&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--swagger--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;2.7.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--swagger ui--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;2.7.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="创建config包，创建Swagger2Config类"><a href="#创建config包，创建Swagger2Config类" class="headerlink" title="创建config包，创建Swagger2Config类"></a>创建config包，创建Swagger2Config类</h5><h3 id="2-3、Swagger注解"><a href="#2-3、Swagger注解" class="headerlink" title="2.3、Swagger注解"></a>2.3、Swagger注解</h3><h5 id="controller中可以添加常用注解"><a href="#controller中可以添加常用注解" class="headerlink" title="controller中可以添加常用注解"></a>controller中可以添加常用注解</h5><h3 id="2-4、测试"><a href="#2-4、测试" class="headerlink" title="2.4、测试"></a>2.4、测试</h3><h5 id="访问：http-localhost-8090-swagger-ui-html"><a href="#访问：http-localhost-8090-swagger-ui-html" class="headerlink" title="访问：http://localhost:8090/swagger-ui.html"></a>访问：<a target="_blank" rel="noopener" href="http://localhost:8090/swagger-ui.html">http://localhost:8090/swagger-ui.html</a></h5><h2 id="3-、定义统一结果"><a href="#3-、定义统一结果" class="headerlink" title="3 、定义统一结果"></a>3 、定义统一结果</h2><h5 id="作用：定义统一响应结果，为前端返回标准格式的数据。"><a href="#作用：定义统一响应结果，为前端返回标准格式的数据。" class="headerlink" title="作用：定义统一响应结果，为前端返回标准格式的数据。"></a>作用：定义统一响应结果，为前端返回标准格式的数据。</h5><h3 id="3-1、引入lombok依赖"><a href="#3-1、引入lombok依赖" class="headerlink" title="3.1、引入lombok依赖"></a>3.1、引入lombok依赖</h3><h5 id="简化实体类的开发"><a href="#简化实体类的开发" class="headerlink" title="简化实体类的开发"></a>简化实体类的开发</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">package com.xxx.paymentdemo.config;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.context.annotation.Bean;</span><br><span class="line">import org.springframework.context.annotation.Configuration;</span><br><span class="line">import springfox.documentation.builders.ApiInfoBuilder;</span><br><span class="line">import springfox.documentation.spi.DocumentationType;</span><br><span class="line">import springfox.documentation.spring.web.plugins.Docket;</span><br><span class="line">import springfox.documentation.swagger2.annotations.EnableSwagger2;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">@EnableSwagger</span><br><span class="line">public class Swagger2Config &#123;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@Bean</span><br><span class="line">public Docket docket()&#123;</span><br><span class="line">return new Docket(DocumentationType.SWAGGER_2)</span><br><span class="line">.apiInfo(new ApiInfoBuilder().title(&quot;微信支付案例接口文</span><br><span class="line">档&quot;).build());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Api(tags=&quot;商品管理&quot;) //用在类上</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@ApiOperation(&quot;测试接口&quot;) //用在方法上</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2、创建R类"><a href="#3-2、创建R类" class="headerlink" title="3.2、创建R类"></a>3.2、创建R类</h3><h5 id="创建统一结果类"><a href="#创建统一结果类" class="headerlink" title="创建统一结果类"></a>创建统一结果类</h5><h3 id="3-3、修改controller"><a href="#3-3、修改controller" class="headerlink" title="3.3、修改controller"></a>3.3、修改controller</h3><h5 id="修改test方法，返回统一结果"><a href="#修改test方法，返回统一结果" class="headerlink" title="修改test方法，返回统一结果"></a>修改test方法，返回统一结果</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--实体对象工具类：低版本idea需要安装lombok插件--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;org.projectlombok&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;lombok&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">package com.xxx.paymentdemo.vo;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import lombok.NoArgsConstructor;</span><br><span class="line">import lombok.Setter;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.Map;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@Data //生成set、get等方法</span><br><span class="line">public class R &#123;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">private Integer code;</span><br><span class="line">private String message;</span><br><span class="line">private Map&lt;String, Object&gt; data = new HashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public static R ok()&#123;</span><br><span class="line">R r = new R();</span><br><span class="line">r.setCode( 0 );</span><br><span class="line">r.setMessage(&quot;成功&quot;);</span><br><span class="line">return r;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public static R error()&#123;</span><br><span class="line">R r = new R();</span><br><span class="line">r.setCode(- 1 );</span><br><span class="line">r.setMessage(&quot;失败&quot;);</span><br><span class="line">return r;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public R data(String key, Object value)&#123;</span><br><span class="line">this.data.put(key, value);</span><br><span class="line">return this;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id=""><a href="#" class="headerlink" title="}"></a>}</h6><h3 id="3-4、配置json时间格式"><a href="#3-4、配置json时间格式" class="headerlink" title="3.4、配置json时间格式"></a>3.4、配置json时间格式</h3><h3 id="3-5、Swagger测试"><a href="#3-5、Swagger测试" class="headerlink" title="3.5、Swagger测试"></a>3.5、Swagger测试</h3><h2 id="4-、创建数据库"><a href="#4-、创建数据库" class="headerlink" title="4 、创建数据库"></a>4 、创建数据库</h2><h3 id="4-1、创建数据库"><a href="#4-1、创建数据库" class="headerlink" title="4.1、创建数据库"></a>4.1、创建数据库</h3><h3 id="4-2、IDEA配置数据库连接"><a href="#4-2、IDEA配置数据库连接" class="headerlink" title="4.2、IDEA配置数据库连接"></a>4.2、IDEA配置数据库连接</h3><h4 id="（-1-）打开数据库面板"><a href="#（-1-）打开数据库面板" class="headerlink" title="（ 1 ）打开数据库面板"></a>（ 1 ）打开数据库面板</h4><p><img src="/images/02.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@ApiOperation(&quot;测试接口&quot;)</span><br><span class="line">@GetMapping(&quot;/test&quot;)</span><br><span class="line">public R test()&#123;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">return R</span><br><span class="line">.ok()</span><br><span class="line">.data(&quot;message&quot;, &quot;hello&quot;)</span><br><span class="line">.data(&quot;now&quot;, new Date());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">jackson: #json时间格式</span><br><span class="line">date-format: yyyy-MM-dd HH:mm:ss</span><br><span class="line">time-zone: GMT+</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql - uroot - p</span><br><span class="line">mysql&gt; create database payment_demo;</span><br></pre></td></tr></table></figure>
+
+<h4 id="（-2-）添加数据库"><a href="#（-2-）添加数据库" class="headerlink" title="（ 2 ）添加数据库"></a>（ 2 ）添加数据库</h4><p><img src="/images/03.png"></p>
+<h4 id="（-3-）配置数据库连接参数"><a href="#（-3-）配置数据库连接参数" class="headerlink" title="（ 3 ）配置数据库连接参数"></a>（ 3 ）配置数据库连接参数</h4><p><img src="/images/04.png"></p>
+<h3 id="4-3、执行SQL脚本"><a href="#4-3、执行SQL脚本" class="headerlink" title="4.3、执行SQL脚本"></a>4.3、执行SQL脚本</h3><h5 id="payment-demo-sql"><a href="#payment-demo-sql" class="headerlink" title="payment_demo.sql"></a>payment_demo.sql</h5><p><img src="/images/05.png"></p>
+<h2 id="5-、集成MyBatis-Plus"><a href="#5-、集成MyBatis-Plus" class="headerlink" title="5 、集成MyBatis-Plus"></a>5 、集成MyBatis-Plus</h2><h3 id="5-1、引入依赖"><a href="#5-1、引入依赖" class="headerlink" title="5.1、引入依赖"></a>5.1、引入依赖</h3><h3 id="5-2、配置数据库连接"><a href="#5-2、配置数据库连接" class="headerlink" title="5.2、配置数据库连接"></a>5.2、配置数据库连接</h3><h3 id="5-3、定义实体类"><a href="#5-3、定义实体类" class="headerlink" title="5.3、定义实体类"></a>5.3、定义实体类</h3><h5 id="BaseEntity是父类，其他类继承BaseEntity"><a href="#BaseEntity是父类，其他类继承BaseEntity" class="headerlink" title="BaseEntity是父类，其他类继承BaseEntity"></a>BaseEntity是父类，其他类继承BaseEntity</h5><p><img src="/images/06.png"></p>
+<h3 id="5-4、定义持久层"><a href="#5-4、定义持久层" class="headerlink" title="5.4、定义持久层"></a>5.4、定义持久层</h3><h5 id="定义Mapper接口继承-BaseMapper，"><a href="#定义Mapper接口继承-BaseMapper，" class="headerlink" title="定义Mapper接口继承 BaseMapper&lt;&gt;，"></a>定义Mapper接口继承 BaseMapper&lt;&gt;，</h5><h5 id="定义xml配置文件"><a href="#定义xml配置文件" class="headerlink" title="定义xml配置文件"></a>定义xml配置文件</h5><p><img src="/images/07.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--mysql驱动--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="-1"><a href="#-1" class="headerlink" title=""></a><!--持久层--></h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;com.baomidou&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;3.3.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">datasource: #mysql数据库连接</span><br><span class="line">driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line">url: jdbc:mysql://localhost:3306/payment_demo?</span><br><span class="line">serverTimezone=GMT%2B8&amp;characterEncoding=utf-</span><br><span class="line">username: root</span><br><span class="line">password: 123456</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-5、定义MyBatis-Plus的配置文件"><a href="#5-5、定义MyBatis-Plus的配置文件" class="headerlink" title="5.5、定义MyBatis-Plus的配置文件"></a>5.5、定义MyBatis-Plus的配置文件</h3><h5 id="在config包中创建配置文件-MybatisPlusConfig"><a href="#在config包中创建配置文件-MybatisPlusConfig" class="headerlink" title="在config包中创建配置文件 MybatisPlusConfig"></a>在config包中创建配置文件 MybatisPlusConfig</h5><h3 id="5-6、定义yml配置文件"><a href="#5-6、定义yml配置文件" class="headerlink" title="5.6、定义yml配置文件"></a>5.6、定义yml配置文件</h3><h5 id="添加持久层日志和xml文件位置的配置"><a href="#添加持久层日志和xml文件位置的配置" class="headerlink" title="添加持久层日志和xml文件位置的配置"></a>添加持久层日志和xml文件位置的配置</h5><h3 id="5-7、定义业务层"><a href="#5-7、定义业务层" class="headerlink" title="5.7、定义业务层"></a>5.7、定义业务层</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">package com.xxx.paymentdemo.config;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import org.mybatis.spring.annotation.MapperScan;</span><br><span class="line">import org.springframework.context.annotation.Configuration;</span><br><span class="line">import org.springframework.transaction.annotation.EnableTransactionManagement;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Configuration</span><br><span class="line">@MapperScan(&quot;com.xxx.paymentdemo.mapper&quot;) //持久层扫描</span><br><span class="line">@EnableTransactionManagement //启用事务管理</span><br><span class="line">public class MybatisPlusConfig &#123;</span><br></pre></td></tr></table></figure>
+<h6 id="-2"><a href="#-2" class="headerlink" title="}"></a>}</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mybatis-plus:</span><br><span class="line">configuration: #sql日志</span><br><span class="line">log-impl: org.apache.ibatis.logging.stdout.StdOutImpl</span><br><span class="line">mapper-locations: classpath:com/xxx/paymentdemo/mapper/xml/*.xml</span><br></pre></td></tr></table></figure>
+
+<h5 id="定义业务层接口继承-IService"><a href="#定义业务层接口继承-IService" class="headerlink" title="定义业务层接口继承 IService&lt;&gt;"></a>定义业务层接口继承 IService&lt;&gt;</h5><h5 id="定义业务层接口的实现类，并继承-ServiceImpl"><a href="#定义业务层接口的实现类，并继承-ServiceImpl" class="headerlink" title="定义业务层接口的实现类，并继承 ServiceImpl&lt;,&gt;"></a>定义业务层接口的实现类，并继承 ServiceImpl&lt;,&gt;</h5><p><img src="/images/08.png"></p>
+<h3 id="5-8、定义接口方法查询所有商品"><a href="#5-8、定义接口方法查询所有商品" class="headerlink" title="5.8、定义接口方法查询所有商品"></a>5.8、定义接口方法查询所有商品</h3><h5 id="在-public-class-ProductController-中添加一个方法"><a href="#在-public-class-ProductController-中添加一个方法" class="headerlink" title="在 public class ProductController 中添加一个方法"></a>在 public class ProductController 中添加一个方法</h5><h3 id="5-9、Swagger中测试"><a href="#5-9、Swagger中测试" class="headerlink" title="5.9、Swagger中测试"></a>5.9、Swagger中测试</h3><h3 id="5-10、pom中配置build节点"><a href="#5-10、pom中配置build节点" class="headerlink" title="5.10、pom中配置build节点"></a>5.10、pom中配置build节点</h3><h5 id="因为maven工程在默认情况下-src-main-java-目录下的所有资源文件是不发布到-target-目录下的，我们"><a href="#因为maven工程在默认情况下-src-main-java-目录下的所有资源文件是不发布到-target-目录下的，我们" class="headerlink" title="因为maven工程在默认情况下 src&#x2F;main&#x2F;java 目录下的所有资源文件是不发布到 target 目录下的，我们"></a>因为maven工程在默认情况下 src&#x2F;main&#x2F;java 目录下的所有资源文件是不发布到 target 目录下的，我们</h5><h5 id="在-pom-文件的-节点下配置一个资源发布过滤器"><a href="#在-pom-文件的-节点下配置一个资源发布过滤器" class="headerlink" title="在 pom 文件的 节点下配置一个资源发布过滤器"></a>在 pom 文件的 节点下配置一个资源发布过滤器</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@Resource</span><br><span class="line">private ProductService productService;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@ApiOperation(&quot;商品列表&quot;)</span><br><span class="line">@GetMapping(&quot;/list&quot;)</span><br><span class="line">public R list()&#123;</span><br><span class="line">List&lt;Product&gt; list = productService.list();</span><br><span class="line">return R.ok().data(&quot;productList&quot;, list);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-、搭建前端环境"><a href="#6-、搭建前端环境" class="headerlink" title="6 、搭建前端环境"></a>6 、搭建前端环境</h2><h3 id="6-1、安装Node-js"><a href="#6-1、安装Node-js" class="headerlink" title="6.1、安装Node.js"></a>6.1、安装Node.js</h3><h5 id="Node-js是一个基于JavaScript引擎的服务器端环境，前端项目在开发环境下要基于Node-js来运行"><a href="#Node-js是一个基于JavaScript引擎的服务器端环境，前端项目在开发环境下要基于Node-js来运行" class="headerlink" title="Node.js是一个基于JavaScript引擎的服务器端环境，前端项目在开发环境下要基于Node.js来运行"></a>Node.js是一个基于JavaScript引擎的服务器端环境，前端项目在开发环境下要基于Node.js来运行</h5><h5 id="安装：node-v14-18-0-x64-msi"><a href="#安装：node-v14-18-0-x64-msi" class="headerlink" title="安装：node-v14.18.0-x64.msi"></a>安装：node-v14.18.0-x64.msi</h5><h3 id="6-2、运行前端项目"><a href="#6-2、运行前端项目" class="headerlink" title="6.2、运行前端项目"></a>6.2、运行前端项目</h3><h5 id="将项目放在磁盘的一个目录中，例如-D-demo-payment-demo-front"><a href="#将项目放在磁盘的一个目录中，例如-D-demo-payment-demo-front" class="headerlink" title="将项目放在磁盘的一个目录中，例如 D:\demo\payment-demo-front"></a>将项目放在磁盘的一个目录中，例如 D:\demo\payment-demo-front</h5><h5 id="进入项目目录，运行下面的命令启动项目："><a href="#进入项目目录，运行下面的命令启动项目：" class="headerlink" title="进入项目目录，运行下面的命令启动项目："></a>进入项目目录，运行下面的命令启动项目：</h5><h3 id="6-3、安装VSCode"><a href="#6-3、安装VSCode" class="headerlink" title="6.3、安装VSCode"></a>6.3、安装VSCode</h3><h5 id="如果你希望方便的查看和修改前端代码，可以安装一个VSCode"><a href="#如果你希望方便的查看和修改前端代码，可以安装一个VSCode" class="headerlink" title="如果你希望方便的查看和修改前端代码，可以安装一个VSCode"></a>如果你希望方便的查看和修改前端代码，可以安装一个VSCode</h5><h5 id="安装：VSCodeUserSetup-x64-1-56"><a href="#安装：VSCodeUserSetup-x64-1-56" class="headerlink" title="安装：VSCodeUserSetup-x64-1.56."></a>安装：VSCodeUserSetup-x64-1.56.</h5><h5 id="安装插件："><a href="#安装插件：" class="headerlink" title="安装插件："></a>安装插件：</h5><p><img src="/images/09.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 项目打包时会将java目录中的*.xml文件也进行打包 --&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line">&lt;resource&gt;</span><br><span class="line">&lt;directory&gt;src/main/java&lt;/directory&gt;</span><br><span class="line">&lt;includes&gt;</span><br><span class="line">&lt;include&gt;**/*.xml&lt;/include&gt;</span><br><span class="line">&lt;/includes&gt;</span><br><span class="line">&lt;filtering&gt;false&lt;/filtering&gt;</span><br><span class="line">&lt;/resource&gt;</span><br><span class="line">&lt;/resources&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-、Vue-js入门"><a href="#7-、Vue-js入门" class="headerlink" title="7 、Vue.js入门"></a>7 、Vue.js入门</h2><h5 id="官网：https-cn-vuejs-org"><a href="#官网：https-cn-vuejs-org" class="headerlink" title="官网：https://cn.vuejs.org/"></a>官网：<a target="_blank" rel="noopener" href="https://cn.vuejs.org/">https://cn.vuejs.org/</a></h5><h5 id="Vue-js是一个前端框架，帮助我们快速构建前端项目。"><a href="#Vue-js是一个前端框架，帮助我们快速构建前端项目。" class="headerlink" title="Vue.js是一个前端框架，帮助我们快速构建前端项目。"></a>Vue.js是一个前端框架，帮助我们快速构建前端项目。</h5><h5 id="使用vue有两种方式，一个是传统的在-html-文件中引入-js-脚本文件的方式，另一个是脚手架的方式。"><a href="#使用vue有两种方式，一个是传统的在-html-文件中引入-js-脚本文件的方式，另一个是脚手架的方式。" class="headerlink" title="使用vue有两种方式，一个是传统的在 html 文件中引入 js 脚本文件的方式，另一个是脚手架的方式。"></a>使用vue有两种方式，一个是传统的在 html 文件中引入 js 脚本文件的方式，另一个是脚手架的方式。</h5><h5 id="我们的项目，使用的是脚手架的方式。"><a href="#我们的项目，使用的是脚手架的方式。" class="headerlink" title="我们的项目，使用的是脚手架的方式。"></a>我们的项目，使用的是脚手架的方式。</h5><h3 id="7-1、安装脚手架"><a href="#7-1、安装脚手架" class="headerlink" title="7.1、安装脚手架"></a>7.1、安装脚手架</h3><h5 id="配置淘宝镜像"><a href="#配置淘宝镜像" class="headerlink" title="配置淘宝镜像"></a>配置淘宝镜像</h5><h5 id="全局安装脚手架"><a href="#全局安装脚手架" class="headerlink" title="全局安装脚手架"></a>全局安装脚手架</h5><h3 id="7-2、创建一个项目"><a href="#7-2、创建一个项目" class="headerlink" title="7.2、创建一个项目"></a>7.2、创建一个项目</h3><h5 id="先进入项目目录（Ctrl-），然后创建一个项目"><a href="#先进入项目目录（Ctrl-），然后创建一个项目" class="headerlink" title="先进入项目目录（Ctrl + ~），然后创建一个项目"></a>先进入项目目录（Ctrl + ~），然后创建一个项目</h5><h3 id="7-3、运行项目"><a href="#7-3、运行项目" class="headerlink" title="7.3、运行项目"></a>7.3、运行项目</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#经过下面的配置，所有的 npm install 都会经过淘宝的镜像地址下载</span><br><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install - g @vue/cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create vue-demo</span><br></pre></td></tr></table></figure>
+
+<h5 id="指定运行端口"><a href="#指定运行端口" class="headerlink" title="指定运行端口"></a>指定运行端口</h5><h3 id="7-4、数据绑定"><a href="#7-4、数据绑定" class="headerlink" title="7.4、数据绑定"></a>7.4、数据绑定</h3><h5 id="修改-src-App-vue"><a href="#修改-src-App-vue" class="headerlink" title="修改 src&#x2F;App.vue"></a>修改 src&#x2F;App.vue</h5><h3 id="7-5、安装Vue调试工具"><a href="#7-5、安装Vue调试工具" class="headerlink" title="7.5、安装Vue调试工具"></a>7.5、安装Vue调试工具</h3><h5 id="在Chrome的扩展程序中安装：Vue-jsDevtools-zip"><a href="#在Chrome的扩展程序中安装：Vue-jsDevtools-zip" class="headerlink" title="在Chrome的扩展程序中安装：Vue.jsDevtools.zip"></a>在Chrome的扩展程序中安装：Vue.jsDevtools.zip</h5><h4 id="（-1-）扩展程序的安装"><a href="#（-1-）扩展程序的安装" class="headerlink" title="（ 1 ）扩展程序的安装"></a>（ 1 ）扩展程序的安装</h4><p><img src="/images/10.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run serve -- --port 8888</span><br></pre></td></tr></table></figure>
+<h6 id="-3"><a href="#-3" class="headerlink" title=""></a><!--定义页面结构--></h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;h1&gt;Vue案例&lt;/h1&gt;</span><br><span class="line">&lt;!-- 插值 --&gt;</span><br><span class="line">&lt;p&gt;&#123;&#123;course&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="-4"><a href="#-4" class="headerlink" title=""></a><!--定义页面脚本--></h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">// 定义数据</span><br><span class="line">data () &#123;</span><br><span class="line">return &#123;</span><br><span class="line">course: &#x27;微信支付&#x27;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="（-2-）扩展程序的使用"><a href="#（-2-）扩展程序的使用" class="headerlink" title="（ 2 ）扩展程序的使用"></a>（ 2 ）扩展程序的使用</h4><p><img src="/images/11.png"></p>
+<h3 id="7-6、双向数据绑定"><a href="#7-6、双向数据绑定" class="headerlink" title="7.6、双向数据绑定"></a>7.6、双向数据绑定</h3><h5 id="数据会绑定到组件，组件的改变也会影响数据定义"><a href="#数据会绑定到组件，组件的改变也会影响数据定义" class="headerlink" title="数据会绑定到组件，组件的改变也会影响数据定义"></a>数据会绑定到组件，组件的改变也会影响数据定义</h5><h3 id="7-7、事件处理"><a href="#7-7、事件处理" class="headerlink" title="7.7、事件处理"></a>7.7、事件处理</h3><h4 id="（-1-）定义事件"><a href="#（-1-）定义事件" class="headerlink" title="（ 1 ）定义事件"></a>（ 1 ）定义事件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">&lt;!-- 指令 --&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; v-model=&quot;course&quot;&gt;</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="定义方法"><a href="#定义方法" class="headerlink" title="&#x2F;&#x2F; 定义方法"></a>&#x2F;&#x2F; 定义方法</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">toPay()&#123;</span><br><span class="line">console.log(&#x27;去支付&#x27;)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="（-2-）调用事件"><a href="#（-2-）调用事件" class="headerlink" title="（ 2 ）调用事件"></a>（ 2 ）调用事件</h4>
+      
+    </div>
+  </div>
+</article>
+
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 cpu飙升<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

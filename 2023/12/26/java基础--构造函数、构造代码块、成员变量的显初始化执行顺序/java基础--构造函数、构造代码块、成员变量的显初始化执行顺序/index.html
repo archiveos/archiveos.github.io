@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>666 | cpu飙升的技术博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="一先看一段代码，包含了构造函数、构造代码块、成员变量的显初始化。会输出什么呢？ 123456789101112131415161718192021class Test&#123;	    &#x2F;&#x2F;构造函数    public Test()&#123;        i &#x3D; 300;	    &#125;    &#x2F;&#x2F;构造代码块    &#123;        i &#x3D; 200;    &#125;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="666">
+<meta property="og:url" content="http://example.com/2023/12/26/java%E5%9F%BA%E7%A1%80--%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%84%E9%80%A0%E4%BB%A3%E7%A0%81%E5%9D%97%E3%80%81%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E7%9A%84%E6%98%BE%E5%88%9D%E5%A7%8B%E5%8C%96%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/java%E5%9F%BA%E7%A1%80--%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%84%E9%80%A0%E4%BB%A3%E7%A0%81%E5%9D%97%E3%80%81%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E7%9A%84%E6%98%BE%E5%88%9D%E5%A7%8B%E5%8C%96%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/index.html">
+<meta property="og:site_name" content="cpu飙升的技术博客">
+<meta property="og:description" content="一先看一段代码，包含了构造函数、构造代码块、成员变量的显初始化。会输出什么呢？ 123456789101112131415161718192021class Test&#123;	    &#x2F;&#x2F;构造函数    public Test()&#123;        i &#x3D; 300;	    &#125;    &#x2F;&#x2F;构造代码块    &#123;        i &#x3D; 200;    &#125;">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/01.png">
+<meta property="article:published_time" content="2023-12-25T20:37:37.000Z">
+<meta property="article:modified_time" content="2024-05-03T16:59:38.703Z">
+<meta property="article:author" content="cpu飙升">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/01.png">
+  
+    <link rel="alternate" href="/atom.xml" title="cpu飙升的技术博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cpu飙升的技术博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">archives@foxmail.com</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-java基础--构造函数、构造代码块、成员变量的显初始化执行顺序/java基础--构造函数、构造代码块、成员变量的显初始化执行顺序" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/26/java%E5%9F%BA%E7%A1%80--%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%84%E9%80%A0%E4%BB%A3%E7%A0%81%E5%9D%97%E3%80%81%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E7%9A%84%E6%98%BE%E5%88%9D%E5%A7%8B%E5%8C%96%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/java%E5%9F%BA%E7%A1%80--%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%84%E9%80%A0%E4%BB%A3%E7%A0%81%E5%9D%97%E3%80%81%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E7%9A%84%E6%98%BE%E5%88%9D%E5%A7%8B%E5%8C%96%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" class="article-date">
+  <time class="dt-published" datetime="2023-12-25T20:37:37.000Z" itemprop="datePublished">2023-12-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      666
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>先看一段代码，包含了构造函数、构造代码块、成员变量的显初始化。会输出什么呢？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span>&#123;	</span><br><span class="line">    <span class="comment">//构造函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Test</span><span class="params">()</span>&#123;</span><br><span class="line">        i = <span class="number">300</span>;	</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//构造代码块</span></span><br><span class="line">    &#123;</span><br><span class="line">        i = <span class="number">200</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//成员变量的显初始化</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">100</span>;	 </span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">Test</span> <span class="variable">test</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Test</span>();</span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span>+test.i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>答案是 i &#x3D; 300</p>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>执行反编译</p>
+<p><img src="/01.png"></p>
+<p>看到构造代码块会被java编译器放在构造函数里面，成员变量的显初始化也会被放在构造函数里面。而构造函数的中代码是最后执行的。</p>
+<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>修改源代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span>&#123;	</span><br><span class="line"></span><br><span class="line">    <span class="comment">//构造代码块</span></span><br><span class="line">    &#123;</span><br><span class="line">        i = <span class="number">200</span>;</span><br><span class="line">    &#125;	</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//成员变量的显初始化</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">100</span>; </span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">Test</span> <span class="variable">test</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Test</span>();</span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span>+test.i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这时候输出的结果是 i &#x3D; 100</p>
+<p>再修改源代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span>&#123;	</span><br><span class="line"></span><br><span class="line">    <span class="comment">//成员变量的显初始化</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">100</span>; </span><br><span class="line"></span><br><span class="line">    <span class="comment">//构造代码块</span></span><br><span class="line">    &#123;</span><br><span class="line">        i = <span class="number">200</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">Test</span> <span class="variable">test</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Test</span>();</span><br><span class="line">        System.out.println(<span class="string">&quot;i = &quot;</span>+test.i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这时候输出的结果是 i &#x3D; 200</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li>java编译器编译后，<strong>构造代码块</strong>会被移动到<strong>构造函数</strong>中执行，是在构造函数之前执行。</li>
+<li><strong>成员变量的显示初始化</strong>也会被移动<strong>构造函数</strong>中执行，也是在构造函数之前执行。</li>
+<li><strong>构造函数</strong>的中代码是最后执行的。</li>
+<li><strong>构造代码块</strong>与<strong>成员变量的显示初始化</strong>是按照当前代码的顺序执行。</li>
+</ol>
+
+      
+    </div>
+  </div>
+</article>
+
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 cpu飙升<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
